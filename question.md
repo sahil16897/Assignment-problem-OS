@@ -8,3 +8,9 @@ a fixed amount of time to every request so that everyone gets a fair share of hi
 log into the system from 10am to 12am only. He wants to have separate requests queues for
 students and faculty. Implement a strategy for the same. The summary at the end of the
 session should include the total time he spent on handling queries and average query time.
+
+
+To execute the program.c fle-
+gcc program.c -lpthread
+
+./a.out
