@@ -18,25 +18,13 @@ int main()
   pthread_t thread2[n];
 
   switch(choice){
-	  	case 1:for(int i=0; i < n; i++){
-					for(int i=0; i < n; i++){
-					pthread_create(&thread1[i], NULL, student, NULL);
-					}
-					for(int i=0; i < n; i++){
+	  	case 1:			pthread_create(&thread1[i], NULL, student, NULL);
 					pthread_join(thread1[i], NULL);
-					}
-				}
-	  			break;
-	  	case 2: for(int i=0; i < n; i++){
-					for(int i=0; i < n; i++){
-					pthread_create(&thread2[i], NULL, teacher, NULL);
-					}
-					for(int i=0; i < n; i++){
+	  				break;
+	  	case 2:			pthread_create(&thread2[i], NULL, teacher, NULL);
 					pthread_join(thread2[i] , NULL);
-					}
-				}
-	  			break;
-	  	default : printf("Attention! Please enter correct option");
+	  				break;
+	  	default : 		printf("Attention! Please enter correct option");
   }
   return 0;
 }
